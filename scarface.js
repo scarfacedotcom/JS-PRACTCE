@@ -57,3 +57,11 @@ const speak = function(){
 }
 
 speak()
+
+//arguments and parameters
+
+const greeting = function(name, time) {
+  console.log(`good ${time} ${name}`)
+}
+
+greeting('peter', 'morning')
