@@ -31,10 +31,29 @@
 
 //if statement
 
-const password = 'p@ss';
+//const password = 'p@ss';
 
-if(password.length >= 8) {
-  console.log('the password is long enough')
-} else {
-  console.log('change the password')
+// if(password.length >= 8) {
+//   console.log('the password is long enough')
+// } else {
+//   console.log('change the password')
+// }
+
+//password.length >=8 ? 'the password is long enough' : 'change the password'
+
+//FUNCTIONS
+
+//functions expressions
+
+function great(){
+  console.log('good day')
 }
+
+great()
+
+//functions decalreation
+const speak = function(){
+  console.log('good morning')
+}
+
+speak()
