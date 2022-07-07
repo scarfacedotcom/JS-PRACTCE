@@ -22,9 +22,17 @@
 
 //do while loop
 
-let i = 0;
+// let i = 0;
 
-do {
-  console.log(i);
-  i++
-} while(i < 5) 
+// do {
+//   console.log(i);
+//   i++
+// } while(i < 5) 
+
+//if statement
+
+const password = 'p@ssword';
+
+if(password.length >= 8) {
+  console.log('the password is long enough')
+}
