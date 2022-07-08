@@ -75,21 +75,39 @@
 // const circleArea = area(7);
 // console.log(circleArea);
 
-const area = (rad) => {
-  return 3.14 * rad *2;
-};
+// const area = (rad) => {
+//   return 3.14 * rad *2;
+// };
 
-const circleArea = area(7);
-console.log('The area of the circle is', circleArea)
+// const circleArea = area(7);
+// console.log('The area of the circle is', circleArea)
 
-const greet = () => 'hello world';
+// const greet = () => 'hello world';
 
-const bill = (products, tax) => {
-  let total = 0;
-  for(let i = 0; i < products.length; i++){
-    total += products[i] + products[i] * tax;
-  }
-  return total;
-}
+// const bill = (products, tax) => {
+//   let total = 0;
+//   for(let i = 0; i < products.length; i++){
+//     total += products[i] + products[i] * tax;
+//   }
+//   return total;
+// }
 
-console.log(bill([20,30,40], 0.3))
+// console.log(bill([20,30,40], 0.3))
+
+
+
+
+// for each method
+const ul = document.querySelector('.people');
+
+const people = ['peter', 'joyce', 'mabel', 'nancy', 'theo']
+
+let html = ``;
+
+people.forEach(person => {
+  // console.log('My name is', person);
+  html += `<li style="color: red">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
