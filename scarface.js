@@ -45,23 +45,39 @@
 
 //functions expressions
 
-function great(){
-  console.log('good day')
-}
+// function great(){
+//   console.log('good day')
+// }
 
-great()
+// great()
 
 //functions decalreation
-const speak = function(){
-  console.log('good morning')
-}
+// const speak = function(){
+//   console.log('good morning')
+// }
 
-speak()
+// speak()
 
 //arguments and parameters
 
-const greeting = function(name, time) {
-  console.log(`good ${time} ${name}`)
-}
+// const greeting = function(name, time) {
+//   console.log(`good ${time} ${name}`)
+// }
 
-greeting('peter', 'morning')
+// greeting('peter', 'morning')
+
+// returnin values
+
+// const area = function(rad) {
+//   return 3.14 * rad **2;
+// };
+
+// const circleArea = area(7);
+// console.log(circleArea);
+
+const area = (rad) => {
+  return 3.14 * rad *2;
+};
+
+const circleArea = area(7);
+console.log('The area of the circle is', circleArea)
