@@ -81,3 +81,15 @@ const area = (rad) => {
 
 const circleArea = area(7);
 console.log('The area of the circle is', circleArea)
+
+const greet = () => 'hello world';
+
+const bill = (products, tax) => {
+  let total = 0;
+  for(let i = 0; i < products.length; i++){
+    total += products[i] + products[i] * tax;
+  }
+  return total;
+}
+
+console.log(bill([20,30,40], 0.3))
