@@ -98,16 +98,36 @@
 
 
 // for each method
-const ul = document.querySelector('.people');
+// const ul = document.querySelector('.people');
 
-const people = ['peter', 'joyce', 'mabel', 'nancy', 'theo']
+// const people = ['peter', 'joyce', 'mabel', 'nancy', 'theo']
 
-let html = ``;
+// let html = ``;
 
-people.forEach(person => {
+// people.forEach(person => {
   // console.log('My name is', person);
-  html += `<li style="color: red">${person}</li>`;
-});
+//   html += `<li style="color: red">${person}</li>`;
+// });
 
-console.log(html);
-ul.innerHTML = html;
+// console.log(html);
+// ul.innerHTML = html;
+
+
+
+//objects
+
+let user = {
+  name: 'peter',
+  age: 30,
+  email: 'peteradaaku@gamil.com',
+  location: 'canada',
+  blogs: ['why is bitcoin te safest asset', 'invest in bitcooin now'],
+  logBlogs: function(){
+    console.log('scarface has written the following blogs');
+    this.blogs.forEach(blog => {
+      console.log(blog);
+    });
+  }
+};
+
+user.logBlogs()
