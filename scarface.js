@@ -116,21 +116,32 @@
 
 //objects
 
-let user = {
-  name: 'peter',
-  age: 30,
-  email: 'peteradaaku@gamil.com',
-  location: 'canada',
-  blogs: [
-    { title: 'why is bitcoin te safest asset', likes: 40 },
-    { title: 'invest in bitcooin now', likes: 50}
-  ],
-  logBlogs: function(){
-    console.log('scarface has written the following blogs');
-    this.blogs.forEach(blog => {
-      console.log(blog.title, blog.likes);
-    });
-  }
-};
+// let user = {
+//   name: 'peter',
+//   age: 30,
+//   email: 'peteradaaku@gamil.com',
+//   location: 'canada',
+//   blogs: [
+//     { title: 'why is bitcoin te safest asset', likes: 40 },
+//     { title: 'invest in bitcooin now', likes: 50}
+//   ],
+//   logBlogs: function(){
+//     console.log('scarface has written the following blogs');
+//     this.blogs.forEach(blog => {
+//       console.log(blog.title, blog.likes);
+//     });
+//   }
+// };
 
-user.logBlogs()
+// user.logBlogs()
+
+
+//query selector
+
+const para = document.querySelector('body > div > p:nth-child(1)')
+
+console.log(para)
+
+const paras = document.querySelectorAll('p')
+
+console.log(paras)
