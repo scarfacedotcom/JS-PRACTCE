@@ -138,10 +138,18 @@
 
 //query selector
 
-const para = document.querySelector('body > div > p:nth-child(1)')
+// const para = document.querySelector('body > div > p:nth-child(1)')
 
-console.log(para)
+// console.log(para)
 
-const paras = document.querySelectorAll('p')
+// const paras = document.querySelectorAll('p')
 
-console.log(paras)
+// console.log(paras)
+
+const id = document.getElementById('page-title');
+
+console.log(id);
+
+const errors = document.getElementsByClassName('error');
+
+console.log(errors);
