@@ -121,11 +121,14 @@ let user = {
   age: 30,
   email: 'peteradaaku@gamil.com',
   location: 'canada',
-  blogs: ['why is bitcoin te safest asset', 'invest in bitcooin now'],
+  blogs: [
+    { title: 'why is bitcoin te safest asset', likes: 40 },
+    { title: 'invest in bitcooin now', likes: 50}
+  ],
   logBlogs: function(){
     console.log('scarface has written the following blogs');
     this.blogs.forEach(blog => {
-      console.log(blog);
+      console.log(blog.title, blog.likes);
     });
   }
 };
