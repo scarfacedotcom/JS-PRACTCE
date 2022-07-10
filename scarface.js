@@ -212,17 +212,24 @@ const article = document.querySelector('article');
 //   child.classList.add('article-element');
 // });
 
-// const button = document.querySelector('button');
+const ul = document.querySelector('ul');
 
-// button.addEventListener('click', () => {
-//   console.log('you just clicked me')
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  ul.innerHTML += '<li>new something</li>'
+
+});
+
+// const items = document.querySelectorAll('li');
+
+// items.forEach(item => {
+//   item.addEventListener('click', e => {
+
+//     e.target.remove();
+//   });
 // });
 
-const items = document.querySelectorAll('li');
-
-items.forEach(item => {
-  item.addEventListener('click', e => {
-    // console.log('item clicked');
-    e.target.style.textDecoration = 'line-through'
-  });
-});
+ul.addEventListener('click', e => {
+  console.log(e.target)
+})
