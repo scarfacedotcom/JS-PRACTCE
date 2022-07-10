@@ -208,6 +208,20 @@ const article = document.querySelector('article');
 
 //console.log(Array.from(article.children))
 
-Array.from(article.children).forEach(child => {
-  child.classList.add('article-element');
+// Array.from(article.children).forEach(child => {
+//   child.classList.add('article-element');
+// });
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+//   console.log('you just clicked me')
+// });
+
+const items = document.querySelectorAll('li');
+
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    console.log('item clicked');
+  });
 });
