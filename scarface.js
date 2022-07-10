@@ -190,16 +190,24 @@
 // link.setAttribute('style', 'color: green')
 
 
-const content = document.querySelectorAll('p');
+// const content = document.querySelectorAll('p');
 
-content.forEach(cont => {
-  if(cont.textContent.includes('error')) {
-    cont.classList.add('error')
-  } else if (cont.textContent.includes('success')) {
-    cont.classList.add('success')
-  }
-})
+// content.forEach(cont => {
+//   if(cont.textContent.includes('error')) {
+//     cont.classList.add('error')
+//   } else if (cont.textContent.includes('success')) {
+//     cont.classList.add('success')
+//   }
+// })
 
 // console.log(content.classList);
 
 // content.classList.add('error')
+
+const article = document.querySelector('article');
+
+//console.log(Array.from(article.children))
+
+Array.from(article.children).forEach(child => {
+  child.classList.add('article-element');
+});
