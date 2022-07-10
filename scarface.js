@@ -179,12 +179,12 @@
 
 
 
-const link = document.querySelector('a');
+// const link = document.querySelector('a');
 
-link.getAttribute('href');
+// link.getAttribute('href');
 
-link.setAttribute('href', 'https://www.scarface.com')
+// link.setAttribute('href', 'https://www.scarface.com')
 
-link.innerText = 'go to scar face website'
+// link.innerText = 'go to scar face website'
 
-link.setAttribute('style', 'color: green')
+// link.setAttribute('style', 'color: green')
