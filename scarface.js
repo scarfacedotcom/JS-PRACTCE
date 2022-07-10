@@ -231,5 +231,8 @@ button.addEventListener('click', () => {
 // });
 
 ul.addEventListener('click', e => {
-  console.log(e.target)
+  //console.log(e.target)
+  if(e.target.tagName === 'LI') {
+    e.target.remove();
+  }
 })
