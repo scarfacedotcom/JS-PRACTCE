@@ -146,10 +146,14 @@
 
 // console.log(paras)
 
-const id = document.getElementById('page-title');
+// const id = document.getElementById('page-title');
 
-console.log(id);
+// console.log(id);
 
-const errors = document.getElementsByClassName('error');
+// const errors = document.getElementsByClassName('error');
 
-console.log(errors);
+// console.log(errors);
+
+const para = document.querySelector('p');
+
+para.innerText += " scar face"
