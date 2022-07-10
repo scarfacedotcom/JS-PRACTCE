@@ -154,6 +154,19 @@
 
 // console.log(errors);
 
-const para = document.querySelector('p');
+// const para = document.querySelector('p');
 
-para.innerText += " scar face"
+// para.innerText += " scar face"
+
+// const paras = document.querySelectorAll('p');
+
+// paras.forEach(para => {
+//   console.log(para.innerText)
+//   para.innerText = 'Scar Face'
+// });
+
+ const content = document.querySelector('.content');
+
+ console.log(content.innerHTML)
+
+content.innerHTML = 'PETER';
