@@ -165,14 +165,26 @@
 //   para.innerText = 'Scar Face'
 // });
 
- const content = document.querySelector('.content');
+ //const content = document.querySelector('.content');
 
 //  console.log(content.innerHTML)
 
 // content.innerHTML = 'PETER';
 
-const people = ['peter', 'scar face', 'mike', 'joyce'];
+// const people = ['peter', 'scar face', 'mike', 'joyce'];
 
-people.forEach(person => {
-  content.innerHTML += `<h2>${person}</h2>`
-});
+// people.forEach(person => {
+//   content.innerHTML += `<h2>${person}</h2>`
+// });
+
+
+
+const link = document.querySelector('a');
+
+link.getAttribute('href');
+
+link.setAttribute('href', 'https://www.scarface.com')
+
+link.innerText = 'go to scar face website'
+
+link.setAttribute('style', 'color: green')
