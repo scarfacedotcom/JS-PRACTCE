@@ -188,3 +188,18 @@
 // link.innerText = 'go to scar face website'
 
 // link.setAttribute('style', 'color: green')
+
+
+const content = document.querySelectorAll('p');
+
+content.forEach(cont => {
+  if(cont.textContent.includes('error')) {
+    cont.classList.add('error')
+  } else if (cont.textContent.includes('success')) {
+    cont.classList.add('success')
+  }
+})
+
+// console.log(content.classList);
+
+// content.classList.add('error')
