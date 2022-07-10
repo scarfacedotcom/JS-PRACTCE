@@ -167,6 +167,12 @@
 
  const content = document.querySelector('.content');
 
- console.log(content.innerHTML)
+//  console.log(content.innerHTML)
 
-content.innerHTML = 'PETER';
+// content.innerHTML = 'PETER';
+
+const people = ['peter', 'scar face', 'mike', 'joyce'];
+
+people.forEach(person => {
+  content.innerHTML += `<h2>${person}</h2>`
+});
