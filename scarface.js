@@ -221,7 +221,8 @@ const article = document.querySelector('article');
 const items = document.querySelectorAll('li');
 
 items.forEach(item => {
-  item.addEventListener('click', () => {
-    console.log('item clicked');
+  item.addEventListener('click', e => {
+    // console.log('item clicked');
+    e.target.style.textDecoration = 'line-through'
   });
 });
