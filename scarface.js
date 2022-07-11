@@ -272,16 +272,23 @@ const article = document.querySelector('article');
 //FORM SUBMIT
 
 const form = document.querySelector('.signup-form');
+const feedback = document.querySelector('.feedback');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  console.log(form.username.value)
+  const username = form.username.value;
+  const usernamePattern = /^[a-z]{6,12}$/;
+  if(usernamePattern.test(username)) {
+    feedback.textContent = 'accepted'
+  } else {
+    feedback.textContent = 'rejected'
+  }
 });
 
 //testing Regex
 const username = 'peter';
 
-const pattern = /[a-z]{6,}/;
+const pattern = /^[a-z]{6,}$/;
 
 let result = pattern.test(username);
 console.log(result);
