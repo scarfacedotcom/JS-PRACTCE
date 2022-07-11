@@ -268,3 +268,15 @@ const article = document.querySelector('article');
 // popup.addEventListener('click', () => {
 //   popup.style.display = 'none'
 // })
+
+//FORM SUBMIT
+
+const form = document.querySelector('.signup-form');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  console.log(form.username.value)
+});
+
+//testing Regex
+const username = 'peter'
