@@ -212,14 +212,14 @@ const article = document.querySelector('article');
 //   child.classList.add('article-element');
 // });
 
-const ul = document.querySelector('ul');
+// const ul = document.querySelector('ul');
 
-const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
-button.addEventListener('click', () => {
-  ul.innerHTML += '<li>new something</li>'
+// button.addEventListener('click', () => {
+//   ul.innerHTML += '<li>new something</li>'
 
-});
+// });
 
 // const items = document.querySelectorAll('li');
 
@@ -230,9 +230,9 @@ button.addEventListener('click', () => {
 //   });
 // });
 
-ul.addEventListener('click', e => {
+//ul.addEventListener('click', e => {
   //console.log(e.target)
-  if(e.target.tagName === 'LI') {
-    e.target.remove();
-  }
-})
+//   if(e.target.tagName === 'LI') {
+//     e.target.remove();
+//   }
+// })
