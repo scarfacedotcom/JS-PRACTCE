@@ -237,14 +237,14 @@ const article = document.querySelector('article');
 //   }
 // })
 
-const copy = document.querySelector('.copy-me');
+// const copy = document.querySelector('.copy-me');
 
-copy.addEventListener('copy', () => {
-  console.log('my page i copyright');
-});
+// copy.addEventListener('copy', () => {
+//   console.log('my page i copyright');
+// });
 
-const box = document.querySelector('.box');
+// const box = document.querySelector('.box');
 
-box.addEventListener('mousemove', e => {
-  box.textContent = `x position is ${e.offsetX} while y position is ${e.offsetY}`
-})
+// box.addEventListener('mousemove', e => {
+//   box.textContent = `x position is ${e.offsetX} while y position is ${e.offsetY}`
+// })

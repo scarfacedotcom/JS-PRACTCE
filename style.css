@@ -19,11 +19,60 @@
   border: 1px dotted #ddd;
 } */
 
-.box{
+/* .box{
   width: 200px;
   height: 200px;
   margin: 10px 0;
   background: #eee;
   text-align: center;
   padding: 20px;
+} */
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: crimson;
+  color: white;
+  border: 0;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(129, 3, 28);
+}
+
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.popup {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  position: relative;
+}
+
+.popup a {
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
 }
