@@ -273,11 +273,13 @@ const article = document.querySelector('article');
 
 const form = document.querySelector('.signup-form');
 const feedback = document.querySelector('.feedback');
+const usernamePattern = /^[a-z]{6,12}$/;
+
 
 form.addEventListener('submit', e => {
   e.preventDefault();
   const username = form.username.value;
-  const usernamePattern = /^[a-z]{6,12}$/;
+
   if(usernamePattern.test(username)) {
     feedback.textContent = 'accepted'
   } else {
@@ -285,10 +287,20 @@ form.addEventListener('submit', e => {
   }
 });
 
+//LIVE FIELD
+
+form.username.addEventListener('keyup', e => {
+  if(usernamePattern.test(e.target.value)){
+    form.username.setAttribute('class', 'success')
+  } else {
+    form.username.setAttribute('class', 'error')
+  }
+})
+
 //testing Regex
-const username = 'peter';
+// const username = 'peter';
 
-const pattern = /^[a-z]{6,}$/;
+// const pattern = /^[a-z]{6,}$/;
 
-let result = pattern.test(username);
-console.log(result);
+// let result = pattern.test(username);
+// console.log(result);
