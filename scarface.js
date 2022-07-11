@@ -279,4 +279,9 @@ form.addEventListener('submit', e => {
 });
 
 //testing Regex
-const username = 'peter'
+const username = 'peter';
+
+const pattern = /[a-z]{6,}/;
+
+let result = pattern.test(username);
+console.log(result);
