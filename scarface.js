@@ -248,3 +248,23 @@ const article = document.querySelector('article');
 // box.addEventListener('mousemove', e => {
 //   box.textContent = `x position is ${e.offsetX} while y position is ${e.offsetY}`
 // })
+
+
+//POP UP BABY
+
+
+const button = document.querySelector('button');
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close')
+
+button.addEventListener('click', () => {
+  popup.style.display = 'block'
+})
+
+close.addEventListener('click', () => {
+  popup.style.display = 'none'
+})
+
+popup.addEventListener('click', () => {
+  popup.style.display = 'none'
+})
