@@ -331,20 +331,37 @@ const article = document.querySelector('article');
 
 //Map Method
 
-const products = [
-  {name: 'sardine', price: 20},
-  {name: 'milk', price: 40},
-  {name: 'milo', price: 30},
-  {name: 'pringles', price: 10},
-  {name: 'biscuites', price: 50},
+// const products = [
+//   {name: 'sardine', price: 20},
+//   {name: 'milk', price: 40},
+//   {name: 'milo', price: 30},
+//   {name: 'pringles', price: 10},
+//   {name: 'biscuites', price: 50},
+// ];
+
+// const newProducts = products.map((product) => {
+//   if (product.price > 20) {
+//     return {name: product.name, price: product.price / 2}
+//   } else {
+//     return {name: product.name, price: product.price }
+//   }
+// });
+
+// console.log(newProducts);
+
+const scores = [
+  {player: 'peter', score:30},
+  {player: 'john', score:50},
+  {player: 'olive', score:30},
+  {player: 'sandra', score:70},
+  {player: 'peter', score:20}
 ];
 
-const newProducts = products.map((product) => {
-  if (product.price > 20) {
-    return {name: product.name, price: product.price / 2}
-  } else {
-    return {name: product.name, price: product.price }
+const peterScores = scores.reduce((acc, curr)=> {
+  if(curr.player === 'peter'){
+    acc += curr.score
   }
-});
+  return acc;
+}, 0);
 
-console.log(newProducts);
+console.log(peterScores);
