@@ -308,10 +308,23 @@ const article = document.querySelector('article');
 
 //ARRAY METHODS
 
-const scores = [10, 30, 15, 25, 40, 5];
+// const scores = [10, 30, 15, 25, 40, 5];
 
-const filteredScores = scores.filter((score) => {
-  return score > 20;
+// const filteredScores = scores.filter((score) => {
+//   return score > 20;
+// });
+
+// console.log(filteredScores);
+
+const users = [
+  {name: 'peter', premium: true},
+  {name: 'joyce', premium: false},
+  {name: 'mabel', premium: false},
+  {name: 'grace', premium: true}
+];
+
+const premiumUsers = users.filter((user) => {
+  return user.premium
 });
 
-console.log(filteredScores);
+console.log(premiumUsers);
