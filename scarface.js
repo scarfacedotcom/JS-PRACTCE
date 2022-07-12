@@ -271,31 +271,31 @@ const article = document.querySelector('article');
 
 //FORM SUBMIT
 
-const form = document.querySelector('.signup-form');
-const feedback = document.querySelector('.feedback');
-const usernamePattern = /^[a-z]{6,12}$/;
+// const form = document.querySelector('.signup-form');
+// const feedback = document.querySelector('.feedback');
+// const usernamePattern = /^[a-z]{6,12}$/;
 
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const username = form.username.value;
+// form.addEventListener('submit', e => {
+//   e.preventDefault();
+//   const username = form.username.value;
 
-  if(usernamePattern.test(username)) {
-    feedback.textContent = 'accepted'
-  } else {
-    feedback.textContent = 'rejected'
-  }
-});
+//   if(usernamePattern.test(username)) {
+//     feedback.textContent = 'accepted'
+//   } else {
+//     feedback.textContent = 'rejected'
+//   }
+// });
 
 //LIVE FIELD
 
-form.username.addEventListener('keyup', e => {
-  if(usernamePattern.test(e.target.value)){
-    form.username.setAttribute('class', 'success')
-  } else {
-    form.username.setAttribute('class', 'error')
-  }
-})
+// form.username.addEventListener('keyup', e => {
+//   if(usernamePattern.test(e.target.value)){
+//     form.username.setAttribute('class', 'success')
+//   } else {
+//     form.username.setAttribute('class', 'error')
+//   }
+// })
 
 //testing Regex
 // const username = 'peter';
@@ -304,3 +304,14 @@ form.username.addEventListener('keyup', e => {
 
 // let result = pattern.test(username);
 // console.log(result);
+
+
+//ARRAY METHODS
+
+const scores = [10, 30, 15, 25, 40, 5];
+
+const filteredScores = scores.filter((score) => {
+  return score > 20;
+});
+
+console.log(filteredScores);
