@@ -316,15 +316,35 @@ const article = document.querySelector('article');
 
 // console.log(filteredScores);
 
-const users = [
-  {name: 'peter', premium: true},
-  {name: 'joyce', premium: false},
-  {name: 'mabel', premium: false},
-  {name: 'grace', premium: true}
+// const users = [
+//   {name: 'peter', premium: true},
+//   {name: 'joyce', premium: false},
+//   {name: 'mabel', premium: false},
+//   {name: 'grace', premium: true}
+// ];
+
+// const premiumUsers = users.filter((user) => {
+//   return user.premium
+// });
+
+// console.log(premiumUsers);
+
+//Map Method
+
+const products = [
+  {name: 'sardine', price: 20},
+  {name: 'milk', price: 40},
+  {name: 'milo', price: 30},
+  {name: 'pringles', price: 10},
+  {name: 'biscuites', price: 50},
 ];
 
-const premiumUsers = users.filter((user) => {
-  return user.premium
+const newProducts = products.map((product) => {
+  if (product.price > 20) {
+    return {name: product.name, price: product.price / 2}
+  } else {
+    return {name: product.name, price: product.price }
+  }
 });
 
-console.log(premiumUsers);
+console.log(newProducts);
