@@ -349,19 +349,36 @@ const article = document.querySelector('article');
 
 // console.log(newProducts);
 
-const scores = [
-  {player: 'peter', score:30},
-  {player: 'john', score:50},
-  {player: 'olive', score:30},
-  {player: 'sandra', score:70},
-  {player: 'peter', score:20}
+// const scores = [
+//   {player: 'peter', score:30},
+//   {player: 'john', score:50},
+//   {player: 'olive', score:30},
+//   {player: 'sandra', score:70},
+//   {player: 'peter', score:20}
+// ];
+
+// const peterScores = scores.reduce((acc, curr)=> {
+//   if(curr.player === 'peter'){
+//     acc += curr.score
+//   }
+//   return acc;
+// }, 0);
+
+// console.log(peterScores);
+
+
+//Array chaining
+
+const products = [
+  {name: 'sardine', price: 20},
+  {name: 'milk', price: 40},
+  {name: 'milo', price: 30},
+  {name: 'pringles', price: 10},
+  {name: 'biscuites', price: 50},
 ];
 
-const peterScores = scores.reduce((acc, curr)=> {
-  if(curr.player === 'peter'){
-    acc += curr.score
-  }
-  return acc;
-}, 0);
+const promos = products
+  .filter(product => product.price > 20)
+  .map(product => `the ${product.name} cost ${product.price / 2}`);
 
-console.log(peterScores);
+  console.log(promos);
