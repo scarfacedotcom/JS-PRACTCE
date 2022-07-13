@@ -423,8 +423,9 @@ const getTodos = async () => {
 
   const res = await fetch('todos/peters.json');
   const data = await res.json();
-  console.log(data);
+  
+  return data;
 
 };
 
-getTodos();
+getTodos().then(data => console.log(data));
