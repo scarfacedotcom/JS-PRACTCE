@@ -408,8 +408,10 @@ const article = document.querySelector('article');
 
 //fetch API
 
-fetch('todos/peters.json').then(() => {
-
-}). catch(() => {
+fetch('todos/peters.json').then((response) => {
+  return response.json();
+}).then(data => {
+  console.log(data)
+}). catch((er) => {
 
 });
