@@ -369,16 +369,31 @@ const article = document.querySelector('article');
 
 //Array chaining
 
-const products = [
-  {name: 'sardine', price: 20},
-  {name: 'milk', price: 40},
-  {name: 'milo', price: 30},
-  {name: 'pringles', price: 10},
-  {name: 'biscuites', price: 50},
-];
+// const products = [
+//   {name: 'sardine', price: 20},
+//   {name: 'milk', price: 40},
+//   {name: 'milo', price: 30},
+//   {name: 'pringles', price: 10},
+//   {name: 'biscuites', price: 50},
+// ];
 
-const promos = products
-  .filter(product => product.price > 20)
-  .map(product => `the ${product.name} cost ${product.price / 2}`);
+// const promos = products
+//   .filter(product => product.price > 20)
+//   .map(product => `the ${product.name} cost ${product.price / 2}`);
 
-  console.log(promos);
+//   console.log(promos);
+
+const clock = document.querySelector('.clock');
+
+const tick = () => {
+
+  const now = newDate()
+
+  const h = now.getHours();
+  const m = now.getMinutes();
+  const s = now.getSeconds();
+
+  const html = 
+};
+
+setInterval(tick, 1000);
