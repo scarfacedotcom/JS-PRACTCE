@@ -77,7 +77,7 @@ button:hover {
   cursor: pointer;
 } */
 
-body {
+/* body {
   background: #eee;
 }
 form{
@@ -98,4 +98,22 @@ input{
 }
 .error {
   border: 2px solid rgb(218, 17, 175);
+} */
+
+
+body {
+  background: brown;
+}
+
+.clock {
+  margin: 2em auto;
+  font-size: 3em;
+  font-weight: 300;
+  padding: 30px auto;
+  text-align: center;
+}
+
+.clock span {
+  padding: 20px;
+  background: yellow;
 }

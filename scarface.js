@@ -394,9 +394,9 @@ const tick = () => {
   const s = now.getSeconds();
 
   const html = `
-    <span>${h}</span> :
-    <span>${m}</span> :
-    <span>${s}</span> 
+    <span>${h} hr</span> :
+    <span>${m} mins</span> :
+    <span>${s} secs</span> 
   `;
 
   clock.innerHTML = html;
