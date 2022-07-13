@@ -408,10 +408,23 @@ const article = document.querySelector('article');
 
 //fetch API
 
-fetch('todos/peters.json').then((response) => {
-  return response.json();
-}).then(data => {
-  console.log(data)
-}). catch((er) => {
+// fetch('todos/peters.json').then((response) => {
+//   return response.json();
+// }).then(data => {
+//   console.log(data)
+// }). catch((er) => {
 
-});
+// });
+
+
+//async and await
+
+const getTodos = async () => {
+
+  const res = await fetch('todos/peters.json');
+  const data = await res.json();
+  console.log(data);
+
+};
+
+getTodos();
