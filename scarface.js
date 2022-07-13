@@ -383,23 +383,33 @@ const article = document.querySelector('article');
 
 //   console.log(promos);
 
-const clock = document.querySelector('.clock');
+// const clock = document.querySelector('.clock');
 
-const tick = () => {
+// const tick = () => {
 
-  const now = new Date();
+//   const now = new Date();
 
-  const h = now.getHours();
-  const m = now.getMinutes();
-  const s = now.getSeconds();
+//   const h = now.getHours();
+//   const m = now.getMinutes();
+//   const s = now.getSeconds();
 
-  const html = `
-    <span>${h} hr</span> :
-    <span>${m} mins</span> :
-    <span>${s} secs</span> 
-  `;
+//   const html = `
+//     <span>${h} hr</span> :
+//     <span>${m} mins</span> :
+//     <span>${s} secs</span> 
+//   `;
 
-  clock.innerHTML = html;
-};
+//   clock.innerHTML = html;
+// };
 
-setInterval(tick, 1000);
+// setInterval(tick, 1000);
+
+
+
+//fetch API
+
+fetch('todos/peters.json').then(() => {
+
+}). catch(() => {
+
+});
