@@ -431,10 +431,18 @@ const article = document.querySelector('article');
 // getTodos().then(data => console.log(data));
 
 //how to store data 
-localStorage.setItem('name', 'peter');
-localStorage.setItem('age', 50);
+// localStorage.setItem('name', 'peter');
+// localStorage.setItem('age', 50);
 
 //get data
-let name = localStorage.getItem('name');
-let age = localStorage.getItem('age');
-console.log(name, age)
+// let name = localStorage.getItem('name');
+// let age = localStorage.getItem('age');
+// console.log(name, age)
+
+const todos = [
+  {text: 'code java', author: 'scarface'},
+  {text: 'barb my hair', author: 'peter'},
+  {text: 'cook fried rice', author: 'anderson'}
+];
+
+console.log(JSON.stringify(todos));
