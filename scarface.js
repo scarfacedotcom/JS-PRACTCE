@@ -419,13 +419,20 @@ const article = document.querySelector('article');
 
 //async and await
 
-const getTodos = async () => {
+// const getTodos = async () => {
 
-  const res = await fetch('todos/peters.json');
-  const data = await res.json();
+//   const res = await fetch('todos/peters.json');
+//   const data = await res.json();
   
-  return data;
+//   return data;
 
-};
+// };
 
-getTodos().then(data => console.log(data));
+// getTodos().then(data => console.log(data));
+
+//how to store data 
+localStorage.setItem('name', 'peter');
+localStorage.setItem('age', 50);
+
+//get data
+let name = localStorage.getItem('name')
