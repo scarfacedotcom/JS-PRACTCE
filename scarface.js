@@ -445,4 +445,6 @@ const todos = [
   {text: 'cook fried rice', author: 'anderson'}
 ];
 
-console.log(JSON.stringify(todos));
+//console.log(JSON.stringify(todos));
+
+localStorage.setItem('todos', JSON.stringify(todos))
