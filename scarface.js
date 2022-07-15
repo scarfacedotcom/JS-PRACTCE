@@ -478,15 +478,23 @@ class User {
 }
 
 class Admin extends User {
-  deleteUser() {
-
+  deleteUser(user) {
+    users = users.filter((u) => {
+      return u.username !== user.username
+    })
   }
 }
 
 const userOne = new User( 'peter', 'peter@gmai.com', 30);
 const userTwo = new User( 'joyce', 'joyce@gmai.com', 30);
 const userThree = new Admin( 'John', 'john@gmai.com', 450);
-console.log(userOne,userTwo, userThree)
+console.log(userOne,userTwo, userThree);
+
+let users= [userOne, userTwo, userThree ];
+//console.log(users);
+
+userThree.deleteUser(userTwo);
+console.log(users);
 
 // userOne.logout();
 // userOne.inScore().inScore().login()
