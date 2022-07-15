@@ -503,3 +503,19 @@ console.log(users);
 // userOne.logout();
 // userOne.inScore().inScore().login()
 // userOne.inScore()
+
+
+// let i = 'peter'
+// for (let i =0;i<=10;i++){
+//   console.log(i)
+// }
+
+
+for (let i =0;i<=10;i++){
+  const i = 'peter'
+}
+console.log(i)
+
+// for(let i = 0; i < 5; i++){
+//   console.log(i)
+// }
