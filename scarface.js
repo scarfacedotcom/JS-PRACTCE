@@ -456,7 +456,7 @@ const article = document.querySelector('article');
 //CLASSES
 
 class User {
-  constructor(username, email, score) {
+  constructor(username, email) {
     this.username = username;
     this.email = email;
     this.score = 0;
@@ -478,6 +478,10 @@ class User {
 }
 
 class Admin extends User {
+  constructor (username, email, title) {
+    super(username, email)
+    this.title = title;
+  }
   deleteUser(user) {
     users = users.filter((u) => {
       return u.username !== user.username
@@ -487,8 +491,8 @@ class Admin extends User {
 
 const userOne = new User( 'peter', 'peter@gmai.com', 30);
 const userTwo = new User( 'joyce', 'joyce@gmai.com', 30);
-const userThree = new Admin( 'John', 'john@gmai.com', 450);
-console.log(userOne,userTwo, userThree);
+const userThree = new Admin( 'John', 'john@gmai.com', 'odogwu');
+console.log(userThree);
 
 let users= [userOne, userTwo, userThree ];
 //console.log(users);
