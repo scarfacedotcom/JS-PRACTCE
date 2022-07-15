@@ -459,7 +459,7 @@ class User {
   constructor(username, email, score) {
     this.username = username;
     this.email = email;
-    this.score = score;
+    this.score = 0;
 
   }
   login(){
@@ -468,9 +468,15 @@ class User {
   logout(){
     console.log(`${this.username} just logged out with an avearge score of ${this.score}`);
   }
+  inScore(){
+    this.score += 5;
+    console.log(`${this.username} has a score of ${this.score}`)
+  }
 }
 
 const userOne = new User( 'peter', 'peter@gmai.com', 30);
 console.log(userOne)
 
 userOne.logout();
+userOne.inScore()
+userOne.inScore()
