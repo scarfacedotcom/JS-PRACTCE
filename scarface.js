@@ -464,13 +464,16 @@ class User {
   }
   login(){
     console.log(`${this.username} just logged in`);
+    return this;
   }
   logout(){
     console.log(`${this.username} just logged out with an avearge score of ${this.score}`);
+    return this;
   }
   inScore(){
     this.score += 5;
-    console.log(`${this.username} has a score of ${this.score}`)
+    console.log(`${this.username} has a score of ${this.score}`);
+    return this;
   }
 }
 
@@ -478,5 +481,5 @@ const userOne = new User( 'peter', 'peter@gmai.com', 30);
 console.log(userOne)
 
 userOne.logout();
-userOne.inScore()
+userOne.inScore().inScore().login()
 userOne.inScore()
