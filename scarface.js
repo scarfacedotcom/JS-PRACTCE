@@ -477,9 +477,17 @@ class User {
   }
 }
 
-const userOne = new User( 'peter', 'peter@gmai.com', 30);
-console.log(userOne)
+class Admin extends User {
+  deleteUser() {
 
-userOne.logout();
-userOne.inScore().inScore().login()
-userOne.inScore()
+  }
+}
+
+const userOne = new User( 'peter', 'peter@gmai.com', 30);
+const userTwo = new User( 'joyce', 'joyce@gmai.com', 30);
+const userThree = new Admin( 'John', 'john@gmai.com', 450);
+console.log(userOne,userTwo, userThree)
+
+// userOne.logout();
+// userOne.inScore().inScore().login()
+// userOne.inScore()
