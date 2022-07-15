@@ -439,16 +439,28 @@ const article = document.querySelector('article');
 // let age = localStorage.getItem('age');
 // console.log(name, age)
 
-const todos = [
-  {text: 'code java', author: 'scarface'},
-  {text: 'barb my hair', author: 'peter'},
-  {text: 'cook fried rice', author: 'anderson'}
-];
+// const todos = [
+//   {text: 'code java', author: 'scarface'},
+//   {text: 'barb my hair', author: 'peter'},
+//   {text: 'cook fried rice', author: 'anderson'}
+// ];
 
 //console.log(JSON.stringify(todos));
 
-localStorage.setItem('todos', JSON.stringify(todos));
+// localStorage.setItem('todos', JSON.stringify(todos));
 
-const stored = localStorage.getItem('todos');
+// const stored = localStorage.getItem('todos');
 
-console.log(JSON.parse(stored));
+// console.log(JSON.parse(stored));
+
+//CLASSES
+
+class User {
+  constructor(username) {
+    this.username = username;
+
+  }
+}
+
+const userOne = 'peter';
+console.log(userOne)
