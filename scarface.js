@@ -456,11 +456,21 @@ const article = document.querySelector('article');
 //CLASSES
 
 class User {
-  constructor(username) {
+  constructor(username, email, score) {
     this.username = username;
+    this.email = email;
+    this.score = score;
 
+  }
+  login(){
+    console.log(`${this.username} just logged in`);
+  }
+  logout(){
+    console.log(`${this.username} just logged out with an avearge score of ${this.score}`);
   }
 }
 
-const userOne = 'peter';
+const userOne = new User( 'peter', 'peter@gmai.com', 30);
 console.log(userOne)
+
+userOne.logout();
