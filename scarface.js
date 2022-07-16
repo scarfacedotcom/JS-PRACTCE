@@ -455,67 +455,51 @@ const article = document.querySelector('article');
 
 //CLASSES
 
-class User {
-  constructor(username, email) {
-    this.username = username;
-    this.email = email;
-    this.score = 0;
+// class User {
+//   constructor(username, email) {
+//     this.username = username;
+//     this.email = email;
+//     this.score = 0;
 
-  }
-  login(){
-    console.log(`${this.username} just logged in`);
-    return this;
-  }
-  logout(){
-    console.log(`${this.username} just logged out with an avearge score of ${this.score}`);
-    return this;
-  }
-  inScore(){
-    this.score += 5;
-    console.log(`${this.username} has a score of ${this.score}`);
-    return this;
-  }
-}
+//   }
+//   login(){
+//     console.log(`${this.username} just logged in`);
+//     return this;
+//   }
+//   logout(){
+//     console.log(`${this.username} just logged out with an avearge score of ${this.score}`);
+//     return this;
+//   }
+//   inScore(){
+//     this.score += 5;
+//     console.log(`${this.username} has a score of ${this.score}`);
+//     return this;
+//   }
+// }
 
-class Admin extends User {
-  constructor (username, email, title) {
-    super(username, email)
-    this.title = title;
-  }
-  deleteUser(user) {
-    users = users.filter((u) => {
-      return u.username !== user.username
-    })
-  }
-}
+// class Admin extends User {
+//   constructor (username, email, title) {
+//     super(username, email)
+//     this.title = title;
+//   }
+//   deleteUser(user) {
+//     users = users.filter((u) => {
+//       return u.username !== user.username
+//     })
+//   }
+// }
 
-const userOne = new User( 'peter', 'peter@gmai.com', 30);
-const userTwo = new User( 'joyce', 'joyce@gmai.com', 30);
-const userThree = new Admin( 'John', 'john@gmai.com', 'odogwu');
-console.log(userThree);
+// const userOne = new User( 'peter', 'peter@gmai.com', 30);
+// const userTwo = new User( 'joyce', 'joyce@gmai.com', 30);
+// const userThree = new Admin( 'John', 'john@gmai.com', 'odogwu');
+// console.log(userThree);
 
-let users= [userOne, userTwo, userThree ];
-//console.log(users);
+// let users= [userOne, userTwo, userThree ];
+// //console.log(users);
 
-userThree.deleteUser(userTwo);
-console.log(users);
+// userThree.deleteUser(userTwo);
+// console.log(users);
 
 // userOne.logout();
 // userOne.inScore().inScore().login()
 // userOne.inScore()
-
-
-// let i = 'peter'
-// for (let i =0;i<=10;i++){
-//   console.log(i)
-// }
-
-
-for (let i =0;i<=10;i++){
-  const i = 'peter'
-}
-console.log(i)
-
-// for(let i = 0; i < 5; i++){
-//   console.log(i)
-// }
