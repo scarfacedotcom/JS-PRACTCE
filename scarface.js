@@ -504,7 +504,7 @@ const article = document.querySelector('article');
 // userOne.inScore().inScore().login()
 // userOne.inScore()
 
-const emotion = ['I LOVE YOU VERY MUCH']
+const emotion = ['I LOVE YOU VERY MUCH MORE']
 for(let i = 0; i < emotion.length; i++){
   console.log(emotion[i])
 }
