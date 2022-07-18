@@ -503,3 +503,8 @@ const article = document.querySelector('article');
 // userOne.logout();
 // userOne.inScore().inScore().login()
 // userOne.inScore()
+
+const emotion = ['I LOVE YOU']
+for(let i = 0; i < emotion.length; i++){
+  console.log(emotion[i])
+}
